@@ -3,7 +3,7 @@ Facebook-app-frame
 
 Simple styled frame to simulate facebook tab apps
 
-Go to the <a href="http://rawgithub.com/octavioamu/facebook-app-frame/master/index.html">DEMO</a> and write a url in the top input to see the site into the frame.
+Go to the <a href="http://rawgithub.com/octavioamu/facebook-app-frame/master/index.html">DEMO</a> and write an url in the top input to see the site into the frame.
 
 Because a psd is not the same, and deploy and app just to see if it is ok sucks... So now we have this little better way to test our work. BUT I need your help to make this idea better and a powerful tool.
 
