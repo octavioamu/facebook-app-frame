@@ -17,14 +17,24 @@
     <iframe id="iframeid" style="width:810px;height:800px;" frameborder="0" src="http://temtem.culturainglesa.net/app/"></iframe>
   </div>
   <script src="js/functions.js"></script>
-  <script src="http://connect.facebook.net/en_US/all.js"></script>
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '207472276105595', // App ID
-      });
-      FB.Canvas.setAutoGrow();
-    }
-  </script>
+
+
+  <div id="fb-root"></div>
+     <script src="http://connect.facebook.net/en_US/all.js"></script>
+     <script type="text/javascript">
+     FB.init({
+            appId  : '207472276105595',
+        });
+
+     function echoSize() {
+              document.getElementById('output').innerHTML =
+                 "HTML Content Width: " + window.innerWidth +
+                 " Height: " + window.innerHeight;
+              console.log(window.innerWidth + ' x ' + window.innerHeight);
+        }
+
+       echoSize();
+       window.onresize = echoSize;
+     </script>
 </body>
 </html>
