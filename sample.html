@@ -3,68 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>Sample app</title>
+  <link rel="stylesheet" href="css/normalize.css">
+
   <style>
+  body {
+    color: #333;
+  }
   code {
-    color: grey;
+    color: #333;
     border: 1px solid grey;
     padding: 2px 3px;
     border-radius: 3px;
     box-shadow: 0px 1px 2px grey;
-    text-shadow: 0px 0px 2px grey;
+    font-size: 0.8em;
   }
   p {
     font-family: arial;
+    line-height: 1.6em;
+  }
+  a {
+    color: #4083D8;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #7190B8;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  ul {
+    padding-left: 17px;
   }
 
   </style>
-  <script id="facebook-jssdk" src="https://connect.facebook.net/pt_BR/all.js"></script>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 </head>
 
 <body>
-  <script>
-    (function(d, s, id){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/pt_BR/all.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
 
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId: '509690425817530',
-        channelUrl: '/channel.php',
-        status: true,
-        cookie: true,
-        oauth: true
-      });
-
-      window.fbLoaded = true;
-      $(window).trigger('fbLoaded');
-
-      FB.Canvas.scrollTo(0, 0);
-      FB.Canvas.setSize({ height: $('html').outerHeight() });
-    }
-  </script>
   <h2>Simple styled frame to simulate facebook tab apps</h2>
+
   <p>
-    Write the app's url, you want to see inside de iframe, on the input of the top ( without http:// ) and then press <code>enter</code>
+    Because a psd is not the same, and deploy and app just to see if it is ok sucks... So now we have this little better way to test our work. BUT I need your help to make this idea better and a powerful tool <a href="https://github.com/octavioamu/facebook-app-frame">Github repository</a>.
+
   </p>
 
 
+  <h3>How to use</h3>
+  <p>
+    - You can test from here :) but if you are making and app maybe is better to clone the repo and use it local.
+  </p>
+  <p>
+    - Clone the git repo — <code>git clone https://github.com/octavioamu/facebook-app-frame.git</code> and use it local (better for working projects due an security policy using iframes to access localhost)
+  </p>
+  <p>
+    Write the app's url, you want to see inside de iframe, on the input of the top ( without http:// ) and then hit <code>enter</code>
+  </p>
 
-<h3>TODO</h3>
-<ul>
-
-<li>Work with urls like: www.url.com?url=www.domain.com</li>
-<li>Better visual configuration</li>
-<li>https / http working</li>
-</ul>
-
-<h3>About facebook app tabs and canvas</h3>
+  <h3>About facebook app tabs and canvas</h3>
   <ul>
     <li>
       <a href="https://developers.facebook.com/docs/javascript/reference">Facebook JS Reference API</a>
@@ -80,6 +75,13 @@
     </li>
   </ul>
 
-
+  <h3>TODO</h3>
+  <ul>
+    <li>Add more options</li>
+    <li>Make height option working</li>
+    <li>Work with urls like: www.url.com?url=www.domain.com</li>
+    <li>Better visual configuration</li>
+    <li>https / http working</li>
+  </ul>
 </body>
 </html>
