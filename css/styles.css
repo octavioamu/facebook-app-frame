@@ -2,10 +2,17 @@ body {
     background: #e7ebf2;
     margin: 0;
     padding: 0;
+    font-family: arial, helvetica;
   }
   .content {
     width: 852px;
     margin: 0 auto;
+    padding-right: 335px;
+  }
+  .title {
+    color: #4c66a4;
+    float: left;
+    margin: 0.2em 0.8em;
   }
   .bar-top {
     top: 0;
@@ -18,13 +25,10 @@ body {
     background: white;
     border: 1px solid #c4cde0;
     border-top: 0;
-    width: 851px;
+    width: 850px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     top: 45px;
-    left: 0;
-    right: 0;
-    margin: auto;
   }
 
   input {
@@ -36,7 +40,7 @@ body {
     padding: 3px 5px;
     font-size: 14px;
   }
-  iframe {
+  .iframe-tab {
     width:810px;
     height:800px;
     margin: 100px auto 0;
@@ -44,4 +48,13 @@ body {
     background: white;
     border-radius: 3px;
     border: 1px solid #c4cde0;
+  }
+  .social-btns {
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    padding: 0;
+  }
+  .social-btns li {
+    display: inline-block;
   }
