@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>IFRAME APP</title>
+  <title>Facebook app frame</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,8 +14,17 @@
     <div class="bar-in"></div>
   </div>
   <div class="content">
-    <iframe id="iframeid" style="width:810px;height:800px;" frameborder="0" src=""></iframe>
+    <iframe id="iframeid" style="width:810px;height:800px;" frameborder="0" src="http://temtem.culturainglesa.net/app/"></iframe>
   </div>
   <script src="js/functions.js"></script>
+  <script src="http://connect.facebook.net/en_US/all.js"></script>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '207472276105595', // App ID
+      });
+      FB.Canvas.setAutoGrow();
+    }
+  </script>
 </body>
 </html>
